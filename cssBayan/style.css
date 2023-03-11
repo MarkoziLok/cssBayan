@@ -18,3 +18,18 @@ body {
     font-size: large;
     height: 100vh;
 }
+
+main {
+    height: 60%;
+}
+
+.accordion__wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
