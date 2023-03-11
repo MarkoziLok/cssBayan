@@ -1,0 +1,20 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+.wrapper{
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(130, 157, 165);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    font-size: large;
+    height: 100vh;
+}
