@@ -7,16 +7,16 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 body {
     background-color: rgb(130, 157, 165);
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(6, 36, 61);
     line-height: 1.2;
     font-size: large;
-    height: 100vh;
 }
 
 main {
@@ -26,10 +26,38 @@ main {
 .accordion__wrapper{
     display: flex;
     flex-direction: column;
-    height: 60%;
+    justify-content: space-around;
+    height: 80%;
+}
+
+@media (min-height: 820px) {
+    .accordion{
+        transition: color .2s;
+    }
+    .accordion:hover{
+        color: aliceblue;
+    }
+}
+
+.label{
+    display: block;
+    cursor: pointer;
+}
+
+.input{
+    appearance: none;
+}
+
+.input:checked + .acc__body{
+    display: block;
+}
+
+.acc__body{
+   display: none; 
 }
 
 img {
     width: 250px;
     height: 250px;
+
 }
